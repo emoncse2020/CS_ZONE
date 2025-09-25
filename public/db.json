@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "Login issue",
+    "description": "Customer cannot log in with correct credentials.",
+    "customer": "Jon Snow",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-25T08:00:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Payment failed",
+    "description": "Payment not going through for premium subscription.",
+    "customer": "Daenerys Targaryen",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-24T15:30:00Z"
+  },
+  {
+    "id": 3,
+    "title": "Unable to upload file",
+    "description": "Customer cannot upload profile picture.",
+    "customer": "Tyrion Lannister",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2025-09-23T12:20:00Z"
+  },
+  {
+    "id": 4,
+    "title": "Bug in checkout",
+    "description": "Discount code not applying correctly.",
+    "customer": "Cersei Lannister",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-22T09:45:00Z"
+  },
+  {
+    "id": 5,
+    "title": "Feature request",
+    "description": "Request to add dark mode.",
+    "customer": "Arya Stark",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2025-09-21T14:10:00Z"
+  },
+  {
+    "id": 6,
+    "title": "Email notifications not received",
+    "description": "Customer not receiving password reset emails.",
+    "customer": "Sansa Stark",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2025-09-20T17:55:00Z"
+  },
+  {
+    "id": 7,
+    "title": "App crashing on launch",
+    "description": "Mobile app crashes immediately on startup.",
+    "customer": "Bran Stark",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-19T11:30:00Z"
+  },
+  {
+    "id": 8,
+    "title": "Incorrect billing",
+    "description": "Customer billed twice for last month.",
+    "customer": "Jaime Lannister",
+    "priority": "High",
+    "status": "Resolved",
+    "createdAt": "2025-09-18T13:20:00Z"
+  },
+  {
+    "id": 9,
+    "title": "Profile update issue",
+    "description": "Changes to profile not saving properly.",
+    "customer": "Sandor Clegane",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-09-17T16:45:00Z"
+  },
+  {
+    "id": 10,
+    "title": "Slow website",
+    "description": "Pages taking too long to load.",
+    "customer": "Jorah Mormont",
+    "priority": "Low",
+    "status": "In Progress",
+    "createdAt": "2025-09-16T10:05:00Z"
+  },
+  {
+    "id": 11,
+    "title": "Password reset issue",
+    "description": "Customer cannot reset password via email.",
+    "customer": "Samwell Tarly",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-09-15T09:15:00Z"
+  },
+  {
+    "id": 12,
+    "title": "Two-factor authentication problem",
+    "description": "Customer not receiving 2FA code.",
+    "customer": "Brienne of Tarth",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2025-09-14T14:30:00Z"
+  },
+  {
+    "id": 13,
+    "title": "Subscription cancellation",
+    "description": "Customer cannot cancel subscription.",
+    "customer": "Petyr Baelish",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2025-09-13T11:20:00Z"
+  },
+  {
+    "id": 14,
+    "title": "Data export issue",
+    "description": "Customer cannot export data to CSV.",
+    "customer": "Varys",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-09-12T16:45:00Z"
+  },
+  {
+    "id": 15,
+    "title": "Notification settings not saving",
+    "description": "Changes to notifications not persisting.",
+    "customer": "Theon Greyjoy",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2025-09-11T08:50:00Z"
+  },
+  {
+    "id": 16,
+    "title": "Mobile app login issue",
+    "description": "App not accepting credentials.",
+    "customer": "Yara Greyjoy",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-10T12:10:00Z"
+  },
+  {
+    "id": 17,
+    "title": "Browser compatibility issue",
+    "description": "Website layout broken on Safari.",
+    "customer": "Ramsay Bolton",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2025-09-09T09:30:00Z"
+  },
+  {
+    "id": 18,
+    "title": "Order not showing",
+    "description": "Customer cannot see their past orders.",
+    "customer": "Walder Frey",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-08T15:45:00Z"
+  },
+  {
+    "id": 19,
+    "title": "Video tutorial not loading",
+    "description": "Embedded videos not playing on dashboard.",
+    "customer": "Gendry",
+    "priority": "Low",
+    "status": "In Progress",
+    "createdAt": "2025-09-07T11:05:00Z"
+  },
+  {
+    "id": 20,
+    "title": "Account locked",
+    "description": "Customer account locked after multiple login attempts.",
+    "customer": "Bran the Broken",
+    "priority": "High",
+    "status": "Resolved",
+    "createdAt": "2025-09-06T14:20:00Z"
+  }
+]

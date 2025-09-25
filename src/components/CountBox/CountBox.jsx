@@ -24,7 +24,7 @@ const CountBox = () => {
             <h3 className="relative z-10 text-6xl text-white">0</h3>
           </div>
           {/* copy of first div */}
-          <div className="relative w-full h-64 flex flex-col items-center justify-center rounded-md overflow-hidden bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)]">
+          <div className="relative w-full h-64 flex flex-col items-center justify-center rounded-md overflow-hidden bg-[linear-gradient(90.00deg,rgba(84,207,103.68001556396484,1),rgba(0,130,122.20001220703125,1)_100%))]">
             <div
               className="absolute inset-0 bg-no-repeat bg-[position:left_top] "
               style={{ backgroundImage: `url(${lines})` }}
