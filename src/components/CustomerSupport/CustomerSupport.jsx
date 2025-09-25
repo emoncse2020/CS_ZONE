@@ -12,8 +12,8 @@ const CustomerSupport = ({ csDataPromise }) => {
           <div className="w-9/12 mx-auto">
             <h1 className="text-2xl text-gray-600 mb-4">Customer Tickets</h1>
             <div className="grid  md:grid-cols-2 gap-6">
-              {csData.map((customer) => (
-                <Card key={customer.id} customer={customer}></Card>
+              {csData.map((customerInfo) => (
+                <Card key={customerInfo.id} customerInfo={customerInfo}></Card>
               ))}
             </div>
           </div>
