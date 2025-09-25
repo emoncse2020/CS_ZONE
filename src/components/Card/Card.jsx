@@ -1,8 +1,20 @@
-const Card = ({ customerInfo }) => {
+const Card = ({ customerInfo, setStat }) => {
   const { id, title, description, customer, priority, status, createdAt } =
     customerInfo;
+
+  const handleClick = () => {
+    setStat((prevStat) => {
+      if (!prevStat.some((item) => item.id === id)) {
+        return [...prevStat, customerInfo];
+      }
+      return prevStat;
+    });
+  };
   return (
-    <article className="rounded-[10px] border border-gray-200 bg-white p-4 shadow">
+    <article
+      onClick={handleClick}
+      className="rounded-[10px] border border-gray-200 bg-white p-4 shadow"
+    >
       <div className="flex justify-between items-center">
         <h3 className="mt-0.5 text-lg font-medium text-gray-900">{title}</h3>
         <div className="bg-green-200 px-3 py-1 rounded-2xl">

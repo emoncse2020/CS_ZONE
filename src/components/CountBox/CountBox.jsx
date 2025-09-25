@@ -1,7 +1,7 @@
 import lines from "../../assets/img/vector1.png";
 import Container from "../Container/Container";
 
-const CountBox = () => {
+const CountBox = ({ stat, resolved }) => {
   return (
     <section>
       <Container>
@@ -21,7 +21,7 @@ const CountBox = () => {
             <h1 className="relative z-10 text-2xl text-white mb-4">
               In-Progress
             </h1>
-            <h3 className="relative z-10 text-6xl text-white">0</h3>
+            <h3 className="relative z-10 text-6xl text-white">{stat.length}</h3>
           </div>
           {/* copy of first div */}
           <div className="relative w-full h-64 flex flex-col items-center justify-center rounded-md overflow-hidden bg-[linear-gradient(90.00deg,rgba(84,207,103.68001556396484,1),rgba(0,130,122.20001220703125,1)_100%))]">
@@ -34,7 +34,9 @@ const CountBox = () => {
               style={{ backgroundImage: `url(${lines})` }}
             ></div>
             <h1 className="relative z-10 text-2xl text-white mb-4">Resolved</h1>
-            <h3 className="relative z-10 text-6xl text-white">0</h3>
+            <h3 className="relative z-10 text-6xl text-white">
+              {resolved.length}
+            </h3>
           </div>
         </div>
       </Container>
