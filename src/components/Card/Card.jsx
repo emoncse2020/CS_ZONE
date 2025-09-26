@@ -1,4 +1,4 @@
-const Card = ({ customerInfo, setStat }) => {
+const Card = ({ customerInfo, setStat, setData }) => {
   const { id, title, description, customer, priority, status, createdAt } =
     customerInfo;
 
@@ -9,6 +9,7 @@ const Card = ({ customerInfo, setStat }) => {
       }
       return prevStat;
     });
+    setData((prevData) => prevData.filter((item) => item.id != id));
   };
   return (
     <article

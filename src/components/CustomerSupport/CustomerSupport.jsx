@@ -6,7 +6,7 @@ import CountBox from "../CountBox/CountBox";
 const CustomerSupport = ({ csDataPromise }) => {
   const csData = use(csDataPromise);
   //   console.log(csData);
-  //   const [data, setData] = useState(csData);
+    const [data, setData] = useState(csData);
   const [stat, setStat] = useState([]);
   const [resolved, setResolved] = useState([]);
 
@@ -27,11 +27,12 @@ const CustomerSupport = ({ csDataPromise }) => {
           <div className="w-9/12 mx-auto">
             <h1 className="text-2xl text-gray-600 mb-4">Customer Tickets</h1>
             <div className="grid  md:grid-cols-2 gap-6">
-              {csData.map((customerInfo) => (
+              {data.map((customerInfo) => (
                 <Card
                   key={customerInfo.id}
                   customerInfo={customerInfo}
                   setStat={setStat}
+                  setData={setData}
                 ></Card>
               ))}
             </div>
