@@ -3,16 +3,29 @@ import Container from "../Container/Container";
 import Card from "../Card/Card";
 import CountBox from "../CountBox/CountBox";
 
+import { Bounce, toast } from "react-toastify";
+
 const CustomerSupport = ({ csDataPromise }) => {
   const csData = use(csDataPromise);
   //   console.log(csData);
-    const [data, setData] = useState(csData);
+  const [data, setData] = useState(csData);
   const [stat, setStat] = useState([]);
   const [resolved, setResolved] = useState([]);
 
   const handleClick = (progStat) => {
     setResolved((preRes) => {
       if (!preRes.some((item) => item.id === progStat.id)) {
+        toast("🦄 progress task added to Resolve!", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+        });
         return [...preRes, progStat];
       }
       return preRes;
@@ -26,6 +39,7 @@ const CustomerSupport = ({ csDataPromise }) => {
         <main className="flex flex-col md:flex-row justify-between gap-8 my-8">
           <div className="w-9/12 mx-auto">
             <h1 className="text-2xl text-gray-600 mb-4">Customer Tickets</h1>
+
             <div className="grid  md:grid-cols-2 gap-6">
               {data.map((customerInfo) => (
                 <Card
@@ -43,7 +57,7 @@ const CustomerSupport = ({ csDataPromise }) => {
             <div>
               {stat.map((progStat) => (
                 <div key={progStat.id} className="p-4 shadow rounded">
-                  <h1 className="text-xl mb-3">Payment Failed</h1>
+                  <h1 className="text-xl mb-3">{progStat.title}</h1>
                   <button
                     onClick={() => handleClick(progStat)}
                     className="w-full mx-auto px-3 py-2 text-white bg-green-400 rounded-md"

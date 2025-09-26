@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import CustomerSupport from "./components/CustomerSupport/CustomerSupport";
+import { ToastContainer } from "react-toastify";
 
 const fetchCSData = async () => {
   const res = await fetch("db.json");
@@ -13,6 +14,7 @@ const csDataPromise = fetchCSData();
 const App = () => {
   return (
     <>
+      <ToastContainer />
       <Navbar />
 
       <Suspense fallback={"loading..."}>
